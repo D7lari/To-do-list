@@ -19,53 +19,7 @@
             Minhas Tarefas
             <button onclick="novaTarefa()">Nova Tarefa</button>
         </h3>
-        <ul id="lista">
-            <!-- <li>
-                <div>
-                    <h5></h5>
-                    <p></p>
-                </div>
-                <div>
-                    <box-icon name='trash' onclick="confirmarExclusao()"></box-icon>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5>Comer</h5>
-                    <p>Em casa</p>
-                </div>
-                <div>
-                    <box-icon name='trash' onclick="confirmarExclusao()"></box-icon>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5>Reunião com cliente</h5>
-                    <p>Ir na KF veiculos se reunir com fabricio</p>
-                </div>
-                <div>
-                    <box-icon name='trash' onclick="confirmarExclusao()"></box-icon>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5>Estudar</h5>
-                    <p>Entender melhor variaveis e constantes</p>
-                </div>
-                <div>
-                    <box-icon name='trash' onclick="confirmarExclusao()"></box-icon>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <h5>Comprar capacete</h5>
-                    <p>Ir na loja e comprar o capacete que EU já escolhi e não ceder ao consumismo</p>
-                </div>
-                <div>
-                    <box-icon name='trash' onclick="confirmarExclusao()"></box-icon>
-                </div>
-            </li> -->
-        </ul>
+        <ul id="lista"></ul>
     </main>
 
     <div id="overlay" onclick="fecharModal()"></div>
@@ -82,8 +36,8 @@
             <h3>Alerta <box-icon name="x" onclick="fecharModal()"></box-icon></h3>
             <p>Deseja realmente apagar esta tarefa?</p>
             <div class="acoes">
-                <button>Cancelar</button>
-                <button>Confirmar</button>
+                <button onclick="fecharModal()">Cancelar</button>
+                <button onclick="deletarTarefa()">Confirmar</button>
             </div>
         </div>
     </div>
